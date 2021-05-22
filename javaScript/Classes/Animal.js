@@ -5,6 +5,7 @@ export default function Animal(name, age, numberOfLegs, weight, food) {
   this.weight = weight;
   this.food = food;
   this.sound = 0;
+  this.image = `/Images/${this.constructor.name}`
 }
 
 export function inheritFromTo(parent, child) {

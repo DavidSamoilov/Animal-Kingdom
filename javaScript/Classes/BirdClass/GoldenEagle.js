@@ -4,7 +4,7 @@ import {Bird} from "/Bird.js";
 
 
 function goldenEagle(name,weight,numberOfLegs,food,sound){
-    Eagle.call(name,weight,numberOfLegs,food,sound)
+    Eagle.call(this,name,weight,numberOfLegs,food,sound)
     
 }
 inheritFromTo(Eagle,goldenEagle)

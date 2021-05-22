@@ -1,9 +1,11 @@
 import {inheritFromTo} from "../Animal.js";
 import Bird from "./Bird.js";
 
-export default function Eagle(name, weight, numberOfLegs, food) {
-  Bird.call(name, weight, numberOfLegs, food);
+function Eagle(name,age, weight, numberOfLegs, food) {
+  Bird.call(this,name,age, weight, numberOfLegs, food);
 }
 inheritFromTo(Bird, Eagle);
+
+export default Eagle
 
 
