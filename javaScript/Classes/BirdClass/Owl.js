@@ -1,5 +1,6 @@
-import {inheritFromTo} from "../Animal";
-import {Bird} from '/Bird'
+import {inheritFromTo} from "../Animal.js";
+import Bird from './Bird.js'
+
 
 
 function Owl(name,weight,numberOfLegs,food){
@@ -7,3 +8,5 @@ function Owl(name,weight,numberOfLegs,food){
     
 }
 inheritFromTo(Bird,Owl)
+
+export default Owl

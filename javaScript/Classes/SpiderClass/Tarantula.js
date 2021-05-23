@@ -1,8 +1,11 @@
-import {Animal,inheritFromTo} from "../Animal";
+import {inheritFromTo} from "../Animal.js";
+import Spider from "./Spider.js"
 
 
 function Tarantula(name,weight,numberOfLegs,food,sound){
-    Spider.call(name,weight,numberOfLegs,food,sound,specialAbility)
+    Spider.call(this,name,weight,numberOfLegs,food,sound)
 
 }
 inheritFromTo(Spider,Tarantula)
+
+export default Tarantula

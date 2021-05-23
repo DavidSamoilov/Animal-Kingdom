@@ -6,6 +6,10 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
 
+<!-- Font -->
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Alegreya:wght@600&display=swap" rel="stylesheet">
+
   <!-- Bootstrap CSS -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
     integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous" />
@@ -18,6 +22,7 @@
 
 <body>
 
+
   <!-- <div id="test"></div> -->
   <!--Management Hierarchy-->
   <section class="management-hierarchy">
@@ -28,8 +33,8 @@
         <div class="hv-item">
           <div class="hv-item-parent">
             <div class="animal">
-              <img src="" alt="" />
-              <p class="name">Ziko Sichi <b>/ CEO</b></p>
+              <div id="Animal-Card"></div>
+              <p class="name"><b>Animal</b></p>
             </div>
           </div>
 
@@ -38,58 +43,27 @@
               <!-- Key component -->
               <div class="hv-item">
                 <div class="hv-item-parent">
-                  <div id="test" class="animal">
-                    <!-- <img
-                      src=Images/Bird.jpg
-                      alt="" />
-                      <p class="name">
-                        <b>Bird</b>
-                    <p>
-                      <b class="text-warning bg-dark">Speacial abilities:</b>
-                    </p>
-                      <ul id="abilities-list">
-                        <li>Flight</li>
-                        <li>Great Vision</li>
-                      </ul>
-
-                    <p class="bg-info text-dark">Stats:</p>
-                    <p class="ml-1 mr-1">
-                      name:dasdas
-                    </p>
-                    <p>
-                      age: dasdas
-                    </p>
-                    <br />
-                    <br />
-                    <a href=""></a>
-                    <a href="#"> <i class="fas fa-utensils"></i> </a>
-                    <a href="">
-                      <i class="fas fa-music"></i>
-                    </a>
-
-                    </p> -->
+                  <div id="bird-card" class="animal">
+                    
                   </div>
                 </div>
 
                 <div class="hv-item-children">
                   <div class="hv-item-child">
-                    <div class="animal">
-                      <img src="https://randomuser.me/api/portraits/women/68.jpg" alt="" />
-                      <p class="name">Anne Potts <b>/ UI Designer</b></p>
+                    <div id="eagle-card" class="animal">
+                      <img src="" alt="" />
                     </div>
                   </div>
 
                   <div class="hv-item-child">
-                    <div class="animal">
-                      <img src="https://randomuser.me/api/portraits/men/81.jpg" alt="" />
-                      <p class="name">Dan Butler <b>/ UI Designer</b></p>
+                    <div id="goldenEagle-card" class="animal">
+                      <img src="" alt="" />
                     </div>
                   </div>
 
                   <div class="hv-item-child">
-                    <div class="animal">
-                      <img src="https://randomuser.me/api/portraits/women/18.jpg" alt="" />
-                      <p class="name">Mary Bower <b>/ UX Designer</b></p>
+                    <div id="owl-card" class="animal">
+                      <img src="" alt="" />
                     </div>
                   </div>
                 </div>
@@ -100,24 +74,21 @@
               <!-- Key component -->
               <div class="hv-item">
                 <div class="hv-item-parent">
-                  <div class="animal">
-                    <img src="https://randomuser.me/api/portraits/men/3.jpg" alt="" />
-                    <p class="name">Gordon Clark <b>/ Senior Developer</b></p>
+                  <div id="spider-card" class="animal">
+                    <img src="" alt="" />
                   </div>
                 </div>
 
                 <div class="hv-item-children">
                   <div class="hv-item-child">
-                    <div class="animal">
-                      <img src="https://randomuser.me/api/portraits/men/41.jpg" alt="" />
-                      <p class="name">Harry Bell <b>/ Front-end</b></p>
+                    <div id="tarantula-card" class="animal">
+                      <img src="" alt="" />
                     </div>
                   </div>
 
                   <div class="hv-item-child">
-                    <div class="animal">
-                      <img src="https://randomuser.me/api/portraits/men/90.jpg" alt="" />
-                      <p class="name">Matt Davies <b>/ Back-end</b></p>
+                    <div id="blackMamba-card" class="animal">
+                      <img src="" alt="" />
                     </div>
                   </div>
                 </div>
@@ -127,6 +98,7 @@
         </div>
       </div>
     </div>
+
   </section>
 
   <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
@@ -139,16 +111,17 @@
   <script type="module" src="/javaScript/Classes/Animal.js"></script>
   <script type="module" src="/javaScript/Classes/BirdClass/Bird.js"></script>
   <script type="module" src="/javaScript/Classes/BirdClass/Eagle.js"></script>
-  <!-- <script type="module" src="/javaScript/Classes/BirdClass/GoldenEagle.js"></script>
+  <script type="module" src="/javaScript/Classes/BirdClass/GoldenEagle.js"></script>
     <script type="module" src="/javaScript/Classes/BirdClass/Owl.js"></script>
     <script type="module" src="/javaScript/Classes/FishClass/Fish.js"></script>
     <script type="module" src="/javaScript/Classes/FishClass/Shark.js"></script>
     <script type="module" src="/javaScript/Classes/FishClass/Tuna.js"></script>
     <script type="module" src="/javaScript/Classes/SpiderClass/BlackMamba.js"></script>
     <script type="module" src="/javaScript/Classes/SpiderClass/Spider.js"></script>
-    <script type="module" src="/javaScript/Classes/SpiderClass/Tarantula.js"></script> -->
+    <script type="module" src="/javaScript/Classes/SpiderClass/Tarantula.js"></script>
   <script type="module" src="/javaScript/Classes/instances.js"></script>
   <script type="module" src="/javaScript/main.js"></script>
+  <script src="/javaScript/modal.js"></script>
 </body>
 
 </html>

@@ -4,8 +4,9 @@ export default function Animal(name, age, numberOfLegs, weight, food) {
   this.numberOfLegs = numberOfLegs;
   this.weight = weight;
   this.food = food;
-  this.sound = 0;
-  this.image = `/Images/${this.constructor.name}`
+  this.sound = new Audio(`./Sounds/${this.constructor.name}.wav`);
+  this.image = `./Images/${this.constructor.name}.jpg`
+
 }
 
 export function inheritFromTo(parent, child) {

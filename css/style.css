@@ -3,7 +3,9 @@ html, body {
   height: 100%;
   font-family: 'Poppins', sans-serif;
   padding: 0;
-  margin: 0; }
+  margin: 0;
+
+ }
 
 i{
   font-size: 2rem;
@@ -41,8 +43,9 @@ p.simple-card {
   box-shadow: 0 3px 6px rgba(204, 131, 103, 0.22); }
 
 .hv-item-parent p {
-  font-weight: bold;
-  color: #DE5454; }
+  /* font-weight: bold;
+  color: #DE5454;  */
+}
 
 .management-hierarchy {
   background-color: #303840; }
@@ -51,7 +54,7 @@ p.simple-card {
   .management-hierarchy .animal {
     text-align: center; }
     .management-hierarchy .animal > img {
-      height: 110px;
+      height: 5rem;
       border: 5px solid #FFF;
       border-radius: 50%;
       overflow: hidden;
@@ -135,9 +138,11 @@ p.simple-card {
                       margin-block-end: 0px;
                     }
                     ul{
-                      list-style-type:none
+                      list-style-type:none;
+                      padding-inline-start: 0px;
+
                     }
 
-                    ul{
-                      padding-inline-start: 0px;
+                    i{
+                      padding: 1px;
                     }

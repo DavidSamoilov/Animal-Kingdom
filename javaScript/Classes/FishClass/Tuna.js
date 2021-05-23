@@ -1,4 +1,5 @@
-import {Animal,inheritFromTo} from "../Animal";
+import {inheritFromTo} from "../Animal.js";
+import Fish from "./Fish.js"
 
 
 
@@ -7,3 +8,5 @@ function Tuna(name,weight,numberOfLegs,food,sound){
 
 }
 inheritFromTo(Fish,Tuna)
+
+export default Tuna
