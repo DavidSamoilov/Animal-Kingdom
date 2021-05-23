@@ -1,10 +1,11 @@
-import {inheritFromTo,Animal} from "../Animal.js";
-import {Eagle} from './Eagle.js'
-import {Bird} from "/Bird.js";
+import {inheritFromTo} from "../Animal.js";
+import Eagle from './Eagle.js'
 
 
-function goldenEagle(name,weight,numberOfLegs,food,sound){
+function GoldenEagle(name,weight,numberOfLegs,food,sound){
     Eagle.call(this,name,weight,numberOfLegs,food,sound)
     
 }
-inheritFromTo(Eagle,goldenEagle)
+inheritFromTo(Eagle,GoldenEagle)
+
+export default GoldenEagle

@@ -33,19 +33,22 @@ import InstanceArray from "./Classes/instances.js"
 
 function createAnimalImgEL(animal){
   let imgEl = document.createElement("img")
-  imgEl.src = 'https://i.pinimg.com/236x/b9/e7/95/b9e7958eb2d7f77bfde8a105efd3b5e5--colourful-birds-exotic-birds.jpg'
+  imgEl.src = animal.image
   return imgEl
 }
 
 function createAnimalNameP(animal){
   let animalNameEl = document.createElement("p")
   animalNameEl.textContent=`${animal.constructor.name}`
+  animalNameEl.classList.add('font-weight-bold')
 
   return animalNameEl
 }
 
 function createSpecialAbilityHeader(animal){
   let pSpecialAbilitiesHeaderEl = document.createElement("p")
+  pSpecialAbilitiesHeaderEl.classList.add("text-danger","bg-warning")
+
 pSpecialAbilitiesHeaderEl.innerText = 'Special Abilities:'
   return pSpecialAbilitiesHeaderEl
 }
@@ -63,18 +66,20 @@ function createListOfAbilities(animal){
 
 function createStatsHeader(){
   let pAnimalStatsHeaderEl = document.createElement("p")
+  pAnimalStatsHeaderEl.classList.add("text-primary","bg-info")
   pAnimalStatsHeaderEl.innerText ="Stats:"
   return pAnimalStatsHeaderEl
 }
 
 function createStatsList(animal){
   let ulEL = document.createElement("ul")
-  let {sound,image,constructor,...relevantStats} = {animal}
   for(let stat in animal) {
-    console.log(stat);
-    let liItemEL = document.createElement("li")
+    if(stat !== 'constructor' &&stat !== 'sound' &&stat !== 'image'&&stat !== 'specialAbility'){
+      let liItemEL = document.createElement("li")
     liItemEL.innerText = `${stat}: ${animal[stat]}`
     ulEL.appendChild(liItemEL)
+    }
+    
     
   }; 
     
@@ -84,17 +89,19 @@ function createStatsList(animal){
 
 function createFoodIcon(animal){
   let aEl = document.createElement("a")
+  aEl.href="#"
   let iEl = document.createElement("i")
   iEl.classList.add("fas","fa-utensils")
   aEl.appendChild(iEl)
   return  aEl
 }
 function createMusicIcon(animal){
-  let aEl = document.createElement("a")
+  let buttonEl = document.createElement("button")
+  buttonEl.onclick=()=>animal.sound.play()
   let iEl = document.createElement("i")
   iEl.classList.add("fas","fa-music")
-  aEl.appendChild(iEl)
-  return  aEl
+  buttonEl.appendChild(iEl)
+  return  buttonEl
 }
                 
 function createAnimalCard1(animal){
@@ -126,9 +133,16 @@ function createAnimalCard(animal){
 
 
 
-  document.querySelector('#test').appendChild(wrapperEl)
+  return (wrapperEl)
 }
-createAnimalCard(InstanceArray[0])
+
+document.querySelector('#bird-card').appendChild(createAnimalCard(InstanceArray[0]))
+document.querySelector('#eagle-card').appendChild(createAnimalCard(InstanceArray[1]))
+document.querySelector('#goldenEagle-card').appendChild(createAnimalCard(InstanceArray[2]))
+document.querySelector('#owl-card').appendChild(createAnimalCard(InstanceArray[3]))
+document.querySelector('#spider-card').appendChild(createAnimalCard(InstanceArray[4]))
+document.querySelector('#tarantula-card').appendChild(createAnimalCard(InstanceArray[5]))
+document.querySelector('#blackMamba-card').appendChild(createAnimalCard(InstanceArray[6]))
 
 
 

@@ -1,4 +1,4 @@
-import {Animal,inheritFromTo} from "../Animal";
+import Animal,{inheritFromTo} from "../Animal.js";
 
 
 function Fish(name,weight,numberOfLegs,food,sound){
@@ -9,3 +9,5 @@ inheritFromTo(Animal,Fish)
 Fish.prototype.swim=function(){
     return `${this.constructor.name} can swim and breath underwater`
 }
+
+export default Fish
