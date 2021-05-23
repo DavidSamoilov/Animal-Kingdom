@@ -6,6 +6,13 @@ html, body {
   margin: 0;
 
  }
+/* modal */
+#modal-btn{
+  background-color: #E9C46A;
+  width: fit-content;
+  margin: auto;
+  padding: 1rem;
+}
 
 i{
   font-size: 2rem;
@@ -21,7 +28,7 @@ section {
   
   section h1 {
     text-align: center;
-    margin-bottom: 70px; }
+    margin-bottom: 30px; }
   section .hv-container {
     flex-grow: 1;
     overflow: auto;
@@ -42,11 +49,32 @@ p.simple-card {
   text-align: center;
   box-shadow: 0 3px 6px rgba(204, 131, 103, 0.22); }
 
-.hv-item-parent p {
-  /* font-weight: bold;
-  color: #DE5454;  */
+
+
+
+p{
+  margin-block-end: 0px;
+}
+ul{
+  list-style-type:none;
+  padding-inline-start: 0px;
+
 }
 
+i{
+  padding: 1px;
+}
+.ability-ul{
+  color: orange;
+  
+}
+li:hover{
+  background-color: BLACK;
+
+}
+
+
+                    
 .management-hierarchy {
   background-color: #303840; }
   .management-hierarchy > h1 {
@@ -130,19 +158,4 @@ p.simple-card {
                     width: calc(50% + 1px); }
 
 
-                
-
-                   
-
-                    p{
-                      margin-block-end: 0px;
-                    }
-                    ul{
-                      list-style-type:none;
-                      padding-inline-start: 0px;
-
-                    }
-
-                    i{
-                      padding: 1px;
-                    }
+    
