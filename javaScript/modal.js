@@ -20,5 +20,4 @@ let text = (`<!-- Modal -->
     </div>
   </div>
 </div>`)
-console.log(text);
 modal.innerHTML = text
