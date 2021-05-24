@@ -18,6 +18,8 @@
 
   <link rel="stylesheet" href="/css/style.css" />
   <title>Hello, world!</title>
+  <script type="module" src="/javaScript/ModalJS/modal.js"></script>
+
 </head>
 
 <body>
@@ -27,25 +29,21 @@
   <section class="management-hierarchy">
     <h1>Animal Kingdom</h1>
     <!-- Button trigger modal -->
-<button type="button" onclick="displaySortedInstanceArrayInModal()" id="modal-btn" class=" mb-4" data-toggle="modal" data-target="#exampleModal">
+<button type="button" id="modal-btn" class=" mb-4" data-toggle="modal" data-target="#exampleModal">
   Animal sorted by weight
 </button>
 
 <!-- Modal -->
-<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+<div class="modal fade" id="exampleModal" data-keyboard="false" data-backdrop="static" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
   <div class="modal-dialog">
     <div class="modal-content">
       <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLabel">Animals Sorted by weight</h5>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
+        <h5 class="modal-title modal-header-text" id="exampleModalLabel">Animals Sorted by weight</h5>
       </div>
       <div class="modal-body" id="modal-list">
-        
       </div>
       <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-secondary" data-dismiss="modal" id="modal-close-btn">Close</button>
       </div>
     </div>
   </div>
@@ -143,7 +141,6 @@
     <script type="module" src="/javaScript/Classes/SpiderClass/Tarantula.js"></script>
   <script type="module" src="/javaScript/Classes/instances.js"></script>
   <script type="module" src="/javaScript/main.js"></script>
-  <script type="module" src="/javaScript/ModalJS/modal.js"></script>
 </body>
 
 </html>
