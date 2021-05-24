@@ -14,7 +14,6 @@ function displaySortedInstanceArrayInModal() {
   const ulEl = document.createElement("ul");
   ulEl.classList.add('modal-ul')
   sortedInstanceArray.forEach((item, index) => {
-    console.log(item);
     let animalModalLi = document.createElement("li");
     animalModalLi.innerText = `${index + 1}. ${
       item.constructor.name
