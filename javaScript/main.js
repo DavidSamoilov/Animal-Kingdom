@@ -1,5 +1,4 @@
 import InstanceArray from "./Classes/instances.js";
-
 function createAnimalImgEL(animal) {
   let imgEl = document.createElement("img");
   imgEl.src = animal.image;

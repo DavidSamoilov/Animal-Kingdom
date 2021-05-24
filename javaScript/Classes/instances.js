@@ -8,8 +8,8 @@ import Spider from "./SpiderClass/Spider.js"
 
 const bird = new Bird(`David`,3,2,3,"bacon")
 const eagle = new Eagle(`Moshe`,5,3,5,"bacon")
-const goldenEagle = new GoldenEagle(`Ron`,8,2,4,"bacon")
-const owl = new Owl(`Daniel`,1,53,3,"bacon")
+const goldenEagle = new GoldenEagle(`Ron`,8,14,4,"bacon")
+const owl = new Owl(`Daniel`,1,10.5,3,"bacon")
 const spider = new Spider(`Gevi`,7,8,6)
 const blackMamba = new BlackMamba(`Leonid`,12,8,4)
 const tarantula = new Tarantula(`Neomi`,9,8,2)

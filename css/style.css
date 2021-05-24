@@ -1,161 +1,229 @@
 @import url("https://fonts.googleapis.com/css?family=Poppins");
-html, body {
+html,
+body {
   height: 100%;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   padding: 0;
   margin: 0;
+  font-size: 1rem;
+  
+  
+}
+body{
+  background: url(https://images.pexels.com/photos/1276518/pexels-photo-1276518.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+/* .management-hierarchy {
+  
+  
+} */
+.black-opacity-layer {
+  background-color: rgba(7, 7, 7, 0.5);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: fit-content;
+}
 
- }
+
+
 /* modal */
-#modal-btn{
-  background-color: #E9C46A;
+
+h1 {
+  font-weight: 800;
+}
+#modal-btn {
+  background-color: #e9c46a;
   width: fit-content;
   margin: auto;
   padding: 1rem;
 }
 
-i{
+.modal-header-text {
+  text-align: center;
+  margin: auto;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: 700;
   font-size: 2rem;
 }
 
+.modal-ul {
+  text-align: center;
+  background-color: #e9c46a;
+  width: fit-content;
+  margin: auto;
+}
+.modal-ul li {
+  background-color: #e9c46a;
+  font-size: 1.3rem;
+}
+.modal-ul li:hover {
+  background-color: #e9c46a;
+}
+#modal-list {
+  background: url(https://images.pexels.com/photos/3876407/pexels-photo-3876407.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940)
+    center center no-repeat;
+}
+/* icons */
+i {
+  font-size: 2rem;
+}
+
+/* tree Structure */
 section {
   min-height: 100%;
   display: flex;
   justify-content: center;
   flex-direction: column;
   padding: 50px 0;
-  position: relative; }
-  
-  section h1 {
-    text-align: center;
-    margin-bottom: 30px; }
-  section .hv-container {
-    flex-grow: 1;
-    overflow: auto;
-    justify-content: center; }
+  position: relative;
+}
+
+section h1 {
+  text-align: center;
+  margin-bottom: 30px;
+}
+section .hv-container {
+  flex-grow: 1;
+  overflow: auto;
+  justify-content: center;
+}
 
 .basic-style {
-  background-color: #EFE6E2; }
-  .basic-style > h1 {
-    color: #ac2222; }
+  background-color: #efe6e2;
+}
+.basic-style > h1 {
+  color: #ac2222;
+}
 
 p.simple-card {
   margin: 0;
   background-color: #fff;
-  color: #DE5454;
+  color: #de5454;
   padding: 30px;
   border-radius: 7px;
   min-width: 100px;
   text-align: center;
-  box-shadow: 0 3px 6px rgba(204, 131, 103, 0.22); }
+  box-shadow: 0 3px 6px rgba(204, 131, 103, 0.22);
+}
 
-
-
-
-p{
+p {
   margin-block-end: 0px;
 }
-ul{
-  list-style-type:none;
+ul {
+  list-style-type: none;
   padding-inline-start: 0px;
-
 }
 
-i{
+i {
   padding: 1px;
 }
-.ability-ul{
+.ability-ul {
   color: orange;
-  
 }
-li:hover{
+li:hover {
   background-color: BLACK;
-
 }
 
 
-                    
-.management-hierarchy {
-  background-color: #303840; }
-  .management-hierarchy > h1 {
-    color: #FFF; }
-  .management-hierarchy .animal {
-    text-align: center; }
-    .management-hierarchy .animal > img {
-      height: 5rem;
-      border: 5px solid #FFF;
-      border-radius: 50%;
-      overflow: hidden;
-      background-color: #fff; }
-    .management-hierarchy .animal{
-      /* .management-hierarchy .animal > p.name { */
-      background-color: #fff;
-      padding: 5px 10px;
-      border-radius: 5px;
-      font-size: 12px;
-      font-weight: normal;
-      color: #3BAA9D;
-      margin: 0;
-      position: relative; }
-      .management-hierarchy .animal > p.name b {
-        color: rgba(59, 170, 157, 0.5); }
-      .management-hierarchy .animal > p.name:before {
-        content: '';
-        position: absolute;
-        width: 2px;
-        height: 8px;
-        background-color: #fff;
-        left: 50%;
-        top: 0;
-        transform: translateY(-100%); }
+.management-hierarchy > h1 {
+  color: #fff;
+}
+.management-hierarchy .animal {
+  text-align: center;
+}
+.management-hierarchy .animal > img {
+  height: 7rem;
+  border: 5px solid #fff;
+  border-radius: 50%;
+  overflow: hidden;
+  background-color: #fff;
+}
+.management-hierarchy .animal {
+  /* .management-hierarchy .animal > p.name { */
+  background-color: #fff;
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-size: 12px;
+  font-weight: normal;
+  color: #3baa9d;
+  margin: 0;
+  position: relative;
+}
+.management-hierarchy .animal > p.name b {
+  color: rgba(59, 170, 157, 0.5);
+}
+.management-hierarchy .animal > p.name:before {
+  content: "";
+  position: absolute;
+  width: 2px;
+  height: 8px;
+  background-color: #fff;
+  left: 50%;
+  top: 0;
+  transform: translateY(-100%);
+}
 
-        .hv-wrapper {
-            display: flex; }
-            .hv-wrapper .hv-item {
-              display: flex;
-              flex-direction: column;
-              margin: auto; }
-              .hv-wrapper .hv-item .hv-item-parent {
-                margin-bottom: 50px;
-                position: relative;
-                display: flex;
-                justify-content: center; }
-                .hv-wrapper .hv-item .hv-item-parent:after {
-                  position: absolute;
-                  content: '';
-                  width: 2px;
-                  height: 25px;
-                  bottom: 0;
-                  left: 50%;
-                  background-color: rgba(255, 255, 255, 0.7);
-                  transform: translateY(100%); }
-              .hv-wrapper .hv-item .hv-item-children {
-                display: flex;
-                justify-content: center; }
-                .hv-wrapper .hv-item .hv-item-children .hv-item-child {
-                  padding: 0 15px;
-                  position: relative; }
-                  .hv-wrapper .hv-item .hv-item-children .hv-item-child:before, .hv-wrapper .hv-item .hv-item-children .hv-item-child:not(:only-child):after {
-                    content: '';
-                    position: absolute;
-                    background-color: rgba(255, 255, 255, 0.7);
-                    left: 0; }
-                  .hv-wrapper .hv-item .hv-item-children .hv-item-child:before {
-                    left: 50%;
-                    top: 0;
-                    transform: translateY(-100%);
-                    width: 2px;
-                    height: 25px; }
-                  .hv-wrapper .hv-item .hv-item-children .hv-item-child:after {
-                    top: -25px;
-                    transform: translateY(-100%);
-                    height: 2px;
-                    width: 100%; }
-                  .hv-wrapper .hv-item .hv-item-children .hv-item-child:first-child:after {
-                    left: 50%;
-                    width: 50%; }
-                  .hv-wrapper .hv-item .hv-item-children .hv-item-child:last-child:after {
-                    width: calc(50% + 1px); }
-
-
-    
+.hv-wrapper {
+  display: flex;
+}
+.hv-wrapper .hv-item {
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+}
+.hv-wrapper .hv-item .hv-item-parent {
+  margin-bottom: 50px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+.hv-wrapper .hv-item .hv-item-parent:after {
+  position: absolute;
+  content: "";
+  width: 2px;
+  height: 25px;
+  bottom: 0;
+  left: 50%;
+  background-color: rgba(255, 255, 255, 0.7);
+  transform: translateY(100%);
+}
+.hv-wrapper .hv-item .hv-item-children {
+  display: flex;
+  justify-content: center;
+}
+.hv-wrapper .hv-item .hv-item-children .hv-item-child {
+  padding: 0 15px;
+  position: relative;
+}
+.hv-wrapper .hv-item .hv-item-children .hv-item-child:before,
+.hv-wrapper .hv-item .hv-item-children .hv-item-child:not(:only-child):after {
+  content: "";
+  position: absolute;
+  background-color: rgba(255, 255, 255, 0.7);
+  left: 0;
+}
+.hv-wrapper .hv-item .hv-item-children .hv-item-child:before {
+  left: 50%;
+  top: 0;
+  transform: translateY(-100%);
+  width: 2px;
+  height: 25px;
+}
+.hv-wrapper .hv-item .hv-item-children .hv-item-child:after {
+  top: -25px;
+  transform: translateY(-100%);
+  height: 2px;
+  width: 100%;
+}
+.hv-wrapper .hv-item .hv-item-children .hv-item-child:first-child:after {
+  left: 50%;
+  width: 50%;
+}
+.hv-wrapper .hv-item .hv-item-children .hv-item-child:last-child:after {
+  width: calc(50% + 1px);
+}
