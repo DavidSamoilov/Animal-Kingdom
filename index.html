@@ -1,118 +1,153 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
 
-<head>
-  <!-- Required meta tags -->
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <!-- Font -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Alegreya:wght@600&display=swap"
+      rel="stylesheet"
+    />
 
-<!-- Font -->
-<link rel="preconnect" href="https://fonts.gstatic.com">
-<link href="https://fonts.googleapis.com/css2?family=Alegreya:wght@600&display=swap" rel="stylesheet">
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+      integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.1/css/all.css"
+      integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp"
+      crossorigin="anonymous"
+    />
 
-  <!-- Bootstrap CSS -->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
-    integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous" />
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css"
-    integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous" />
+    <link rel="stylesheet" href="/css/style.css" />
+    <title>Animal Kingdom</title>
+    <script type="module" src="/javaScript/ModalJS/modal.js"></script>
+  </head>
 
-  <link rel="stylesheet" href="/css/style.css" />
-  <title>Hello, world!</title>
-  <script type="module" src="/javaScript/ModalJS/modal.js"></script>
+  <body>
+    <div class="black-opacity-layer">
+      <!-- <div id="test"></div> -->
+      <!--Management Hierarchy-->
+      <section class="management-hierarchy">
+        <h1>Animal Kingdom</h1>
+        <!-- Button trigger modal -->
+        <button
+          type="button"
+          id="modal-btn"
+          class="mb-4"
+          data-toggle="modal"
+          data-target="#exampleModal"
+        >
+          Animal sorted by weight
+        </button>
 
-</head>
-
-<body>
-  <div class="black-opacity-layer">
-
-  <!-- <div id="test"></div> -->
-  <!--Management Hierarchy-->
-  <section class="management-hierarchy">
-    <h1>Animal Kingdom</h1>
-    <!-- Button trigger modal -->
-<button type="button" id="modal-btn" class=" mb-4" data-toggle="modal" data-target="#exampleModal">
-  Animals sorted by weight
-</button>
-
-<!-- Modal -->
-<div class="modal fade" id="exampleModal" data-keyboard="false" data-backdrop="static" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div class="modal-dialog">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title modal-header-text" id="exampleModalLabel">Animals Sorted by weight</h5>
-      </div>
-      <div class="modal-body" id="modal-list">
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-dismiss="modal" id="modal-close-btn">Close</button>
-      </div>
-    </div>
-  </div>
-</div>
-    
-
-    <div class="hv-container">
-      <div class="hv-wrapper">
-        <!-- Key component -->
-        <div class="hv-item">
-          <div class="hv-item-parent">
-            <div class="animal">
-              <div id="Animal-Card"></div>
-              <p class="name"><b>Animal</b></p>
-            </div>
-          </div>
-
-          <div class="hv-item-children">
-            <div class="hv-item-child">
-              <!-- Key component -->
-              <div class="hv-item">
-                <div class="hv-item-parent">
-                  <div id="bird-card" class="animal">
-                    
-                  </div>
-                </div>
-
-                <div class="hv-item-children">
-                  <div class="hv-item-child">
-                    <div id="eagle-card" class="animal">
-                      <img src="" alt="" />
-                    </div>
-                  </div>
-
-                  <div class="hv-item-child">
-                    <div id="goldenEagle-card" class="animal">
-                      <img src="" alt="" />
-                    </div>
-                  </div>
-
-                  <div class="hv-item-child">
-                    <div id="owl-card" class="animal">
-                      <img src="" alt="" />
-                    </div>
-                  </div>
-                </div>
+        <!-- Modal -->
+        <div
+          class="modal fade"
+          id="exampleModal"
+          data-keyboard="false"
+          data-backdrop="static"
+          tabindex="-1"
+          aria-labelledby="exampleModalLabel"
+          aria-hidden="true"
+        >
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5
+                  class="modal-title modal-header-text"
+                  id="exampleModalLabel"
+                >
+                  Animals Sorted by weight
+                </h5>
+              </div>
+              <div class="modal-body" id="modal-list"></div>
+              <div class="modal-footer">
+                <button
+                  type="button"
+                  class="btn btn-secondary"
+                  data-dismiss="modal"
+                  id="modal-close-btn"
+                >
+                  Close
+                </button>
               </div>
             </div>
+          </div>
+        </div>
 
-            <div class="hv-item-child">
-              <!-- Key component -->
-              <div class="hv-item">
-                <div class="hv-item-parent">
-                  <div id="spider-card" class="animal">
-                    <img src="" alt="" />
+        <div class="hv-container">
+          <div class="hv-wrapper">
+            <!-- Key component -->
+            <div class="hv-item">
+              <div class="hv-item-parent">
+                <div class="animal">
+                  <div id="Animal-Card"></div>
+                  <p class="name"><b>Animal</b></p>
+                </div>
+              </div>
+
+              <div class="hv-item-children">
+                <div class="hv-item-child">
+                  <!-- Key component -->
+                  <div class="hv-item">
+                    <div class="hv-item-parent">
+                      <div id="bird-card" class="animal"></div>
+                    </div>
+
+                    <div class="hv-item-children">
+                      <div class="hv-item-child">
+                        <div id="eagle-card" class="animal">
+                          <img src="" alt="" />
+                        </div>
+                      </div>
+
+                      <div class="hv-item-child">
+                        <div id="goldenEagle-card" class="animal">
+                          <img src="" alt="" />
+                        </div>
+                      </div>
+
+                      <div class="hv-item-child">
+                        <div id="owl-card" class="animal">
+                          <img src="" alt="" />
+                        </div>
+                      </div>
+                    </div>
                   </div>
                 </div>
 
-                <div class="hv-item-children">
-                  <div class="hv-item-child">
-                    <div id="tarantula-card" class="animal">
-                      <img src="" alt="" />
+                <div class="hv-item-child">
+                  <!-- Key component -->
+                  <div class="hv-item">
+                    <div class="hv-item-parent">
+                      <div id="spider-card" class="animal">
+                        <img src="" alt="" />
+                      </div>
                     </div>
-                  </div>
 
-                  <div class="hv-item-child">
-                    <div id="blackMamba-card" class="animal">
-                      <img src="" alt="" />
+                    <div class="hv-item-children">
+                      <div class="hv-item-child">
+                        <div id="tarantula-card" class="animal">
+                          <img src="" alt="" />
+                        </div>
+                      </div>
+
+                      <div class="hv-item-child">
+                        <div id="blackMamba-card" class="animal">
+                          <img src="" alt="" />
+                        </div>
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -120,28 +155,41 @@
             </div>
           </div>
         </div>
-      </div>
+      </section>
     </div>
-  </section>
-</div>
 
-  <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
-  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
-    crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
-    crossorigin="anonymous"></script>
-  <script type="module" src="/javaScript/Classes/Animal.js"></script>
-  <script type="module" src="/javaScript/Classes/BirdClass/Bird.js"></script>
-  <script type="module" src="/javaScript/Classes/BirdClass/Eagle.js"></script>
-  <script type="module" src="/javaScript/Classes/BirdClass/GoldenEagle.js"></script>
+    <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
+      crossorigin="anonymous"
+    ></script>
+    <script type="module" src="/javaScript/Classes/Animal.js"></script>
+    <script type="module" src="/javaScript/Classes/BirdClass/Bird.js"></script>
+    <script type="module" src="/javaScript/Classes/BirdClass/Eagle.js"></script>
+    <script
+      type="module"
+      src="/javaScript/Classes/BirdClass/GoldenEagle.js"
+    ></script>
     <script type="module" src="/javaScript/Classes/BirdClass/Owl.js"></script>
-    <script type="module" src="/javaScript/Classes/SpiderClass/BlackMamba.js"></script>
-    <script type="module" src="/javaScript/Classes/SpiderClass/Spider.js"></script>
-    <script type="module" src="/javaScript/Classes/SpiderClass/Tarantula.js"></script>
-  <script type="module" src="/javaScript/Classes/instances.js"></script>
-  <script type="module" src="/javaScript/main.js"></script>
-</body>
-
+    <script
+      type="module"
+      src="/javaScript/Classes/SpiderClass/BlackMamba.js"
+    ></script>
+    <script
+      type="module"
+      src="/javaScript/Classes/SpiderClass/Spider.js"
+    ></script>
+    <script
+      type="module"
+      src="/javaScript/Classes/SpiderClass/Tarantula.js"
+    ></script>
+    <script type="module" src="/javaScript/Classes/instances.js"></script>
+    <script type="module" src="/javaScript/main.js"></script>
+  </body>
 </html>

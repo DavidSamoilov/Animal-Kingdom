@@ -1,25 +1,22 @@
 @import url("https://fonts.googleapis.com/css?family=Poppins");
 html,
 body {
-  height: 100%;
   font-family: "Poppins", sans-serif;
   padding: 0;
   margin: 0;
   font-size: 1rem;
-  
-  
 }
-body{
-  background: url(https://images.pexels.com/photos/1276518/pexels-photo-1276518.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940) no-repeat center center fixed;
+body {
+  background: url(https://images.pexels.com/photos/1276518/pexels-photo-1276518.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940)
+    no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
 }
-/* .management-hierarchy {
-  
-  
-} */
+
+
+/* Black background overlay */
 .black-opacity-layer {
   background-color: rgba(7, 7, 7, 0.5);
   position: absolute;
@@ -28,8 +25,6 @@ body{
   width: 100%;
   height: fit-content;
 }
-
-
 
 /* modal */
 
@@ -128,7 +123,6 @@ i {
 li:hover {
   background-color: BLACK;
 }
-
 
 .management-hierarchy > h1 {
   color: #fff;
